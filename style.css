@@ -1,0 +1,143 @@
+body{
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+h2, h3{
+    font-family: 'Outfit', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.main-card{
+    display: flex;
+    gap: 30px;
+    align-items:center ;
+    margin-top: 250px;
+    margin-bottom: 300px;
+}
+.main-card p{
+    width: 400px;
+}
+.main-card h2{
+    margin-top: 0;
+    color: #afbfd6;
+}
+.profile-pic{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.greeting{
+    margin-bottom: 0;
+}
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-me .p{
+    text-align: center;
+    width: 800px;
+    margin-bottom: 100px;
+}
+.fa-brands{
+    font-size: 35px;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.link{
+    margin-bottom: 100px;
+}
+.language-known{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+a{
+    text-align: left;
+    text-decoration: none;
+}
+footer{
+    text-align: center;
+}
+.second-part{
+    width: 100%;
+    background-color: #afbfd6;
+}
+.second-part h2,.second-part h3{
+    color: rgb(61, 59, 59);
+}
+@media (max-width:800px){
+    .container{
+        justify-content: left;
+        align-items: start;
+    }
+    .main-card{
+        padding: 20px;
+        display: inline;
+        flex-direction: row;
+        margin-top: 0;
+        margin-bottom: 180px;
+    }
+    .main-card p{
+        width: auto;
+    }
+    .about-me .p{
+        width: auto;
+        padding: 20px;
+    }
+    .profile-pic{
+        position: absolute;
+    }
+    .language-known{
+        gap: 0px;
+    }
+    .link{
+        font-size: 15px;
+    }
+    .link a i{
+        font-size: 26px;
+}
+    .language-known{
+        flex-direction: column;
+        gap: 10px;
+    }
+@media (max-width:310px) {
+    .main-card .intro{
+        display: none;
+    }
+    .language-known p{
+        display: none;
+    }
+    .link{
+        font-size: 10px;
+    }
+    .link a i{
+        font-size: 20px;
+    }
+}
+@media (max-width:195px) {
+    .main-card{
+        margin-bottom: 100px;
+    }
+    .language-known{
+        display: none;
+    }
+    .profile-pic{
+        width: 100px;
+        height: 100px;
+    }
+    .link{
+        display: none;
+    }
+}}
